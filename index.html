@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+     
+        @media screen and (max-width:990px) {
+            .it{
+                flex-basis: 45%;
+            }
+            .s41{
+              flex-basis: 100%;
+            }
+            .ll{
+              flex-basis: 100%;
+            }
+            .s51{
+              flex-basis: 80%
+            }
+        }
+
+
+        @media screen and (min-width:991px) {
+            .navbar-brand{
+                  font-size: 30px;
+                  position: relative;
+                  left: 100px;
+              }
+           .nav-item{
+              position: relative;
+              left: 950px;
+              font-size: 25px;
+              padding-left: 80px;
+           }
+           .nav-link:hover{
+            background-color: rgb(190, 133, 25);
+            border-radius: 20px;
+            padding: 10px 50px;
+           }
+           
+        }
+
+        *{
+          border: 0;
+          margin: 0;
+          box-sizing: border-box;
+        }
+        body{
+          overflow-x: hidden;
+        }
+        main{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .navbar-brand{
+            letter-spacing: 2px;
+            font-size: 30px;
+        }
+        .s1{
+            width: 100vw;
+            height: 100vh;
+            position: relative;
+            top: -75px;
+           
+        }
+        .hom{
+            width: 100%;
+            height: 100%;
+        }
+        nav{
+            z-index: 10;
+        }
+        .s2{
+            text-align: center;
+            padding: 70px;
+        }
+        .s3{
+            width: 80vw;
+            display: flex;
+            justify-content: center;
+            padding: 30px 20px;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+       .it{
+        width: 23%;
+        padding: 20px;
+       }
+       .f{
+        width: 100%;
+       }
+       .bi{
+        background-color: rgb(190, 133, 25) ;
+         border: none;
+          padding: 10px 15px; 
+          border-radius: 10px;
+          color: #ffff;
+       }
+       .s4{
+        width: 80vw;
+        display: flex;
+        padding: 20px;
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+       }
+       .s41{
+        width: 48%;
+        padding: 10px;
+       }
+       .bone{
+        width: 100%;
+       }
+       .s4b{
+        background-color: rgb(230, 157, 23);
+        padding: 5px 20px;
+        border-radius: 10px;
+       }
+      .pp{
+        font-size: 1.1rem;
+      }
+      .sss{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        left: 30px;
+        gap: 20px;
+      }
+      .ll{
+        width: 48%;
+        font-size: 1.3rem;
+        line-height: 40px;
+      }
+      .ip{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding-top:20px ;
+
+      }
+      .mm{
+        display: flex;
+        gap: 5px;
+        padding: 10px;
+      }
+      .lp{
+        width: 40%;
+      }
+      .xx{
+        font-size: 1.1rem;
+        padding-left: 10px;
+      }
+      span{
+        color: rgb(224, 149, 8);
+        font-size: 1.3rem;
+      }
+      .s5{
+        width: 100vw;
+        background-image: url(./classic-pattern-bg\ \(1\).png);
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+        padding: 30px 0px;
+      }
+      .s51{
+        width: 23%;
+        padding: 20px;
+      }
+      .ww{
+        background-color: aliceblue;
+        padding: 40px 20px;
+      }
+      .lm{
+        font-size:1.1rem ;
+      }
+      .s51>a{
+        color: rgb(224, 157, 33);
+        padding-left: 30px;
+        line-height: 30px;
+        font-size: 1.2rem;
+      }
+      .eme{
+        font-size: 1.1rem;
+        color: azure;
+      }
+      .ph{
+        width: 100%;
+      }
+      .ci{
+        width: 32%;
+        padding: 2px;
+      }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid" style="position: relative">
+          <a href="" class="navbar-brand">Classic</a>
+          <button
+            class="navbar-toggler"
+            data-bs-toggle="collapse"
+            data-bs-target="#navi"
+            id="md"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navi">
+            <ul class="navbar-nav">
+              <li class="nav-item"><a href="#about" class="nav-link">Home</a></li>
+              <li class="nav-item"><a href="#skills" class="nav-link">About</a></li>
+              <li class="nav-item"><a href="#crsl" class="nav-link">Blog</a></li>
+              <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div class="s1">
+        <img class="hom" src="./tm-home-img (1).jpg" alt="">
+      </div>
+
+
+      <main>
+      <div class="s2">
+        <h1 style="font-size: 35px;">Introduction</h1><br>
+        <p style="font-size: 20px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, eos? Perspiciatis, obcaecati et. Ipsa minus esse tempora expedita ipsam, fuga beatae in repellat inventore soluta, at debitis dignissimos est doloribus!30</p>
+      </div>
+
+      <div class="s3">
+        <div class="it">
+            <img src="./tm-img-310x180-1 (1).jpg" alt="" class="f"><br><br>
+            <h4 style="color:rgb(190, 133, 25) ;">Lorem Ipsum Dolor #1</h4>
+            <p style="font-size: 1.2rem;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione iste perferendis delectus aspernatur.</p>
+            <button class="bi">Detail</button>
+        </div>
+        <div class="it">
+            <img src="./tm-img-310x180-2 (1).jpg" alt="" class="f"><br><br>
+            <h4 style="color:rgb(190, 133, 25)";">Lorem Ipsum Dolor #2</h4>
+            <p style="font-size: 1.2rem;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione iste perferendis delectus aspernatur.</p>
+            <button class="bi">Read More</button>
+
+
+        </div>
+        <div class="it">
+            <img src="./tm-img-310x180-3 (1).jpg" alt="" class="f"><br><br>
+            <h4 style="color:rgb(190, 133, 25) ";">Lorem Ipsum Dolor #3</h4>
+            <p style="font-size: 1.2rem;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione iste perferendis delectus aspernatur.</p>
+            <button class="bi">Detail</button>
+
+
+        </div>
+        <div class="it">
+            <img src="./tm-img-310x180-4 (1).jpg" alt="" class="f"><br><br>
+            <h4 style="color:rgb(190, 133, 25);">Lorem Ipsum Dolor #4</h4>
+            <p style="font-size: 1.2rem;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione iste perferendis delectus aspernatur.</p>
+            <button class="bi" style="background-color: rgb(190, 133, 25) ;">Read More</button>
+
+
+
+        </div>
+      </div>
+
+      <div  class="s4">
+        <div class="s41">
+          <h3 style="color: rgb(230, 152, 9); padding: 5px 5px; font-size: 1.5rem;">Pellentescue fermentum mauris et posure</h3>
+          <p style="font-size: 1.1rem; padding-left: 10px;">Lorem ipsum dolor sit amet consectetur elit. Error, vero.</p>
+          <img src="./tm-img-660x330-1 (1).jpg" alt="" class="bone"><br><br>
+          <p class="pp">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam saepe alias nobis asperiores laudantium tenetur adipisci numquam eveniet dolorum architecto hic ut, impedit ea blanditiis illum autem nihil voluptate repellendus.</p>
+          <p class="pp">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore tempore cumque dolore reprehenderit aspernatur officia doloremque harum, explicabo quidem, laudantium quibusdam, impedit iure animi libero porro rem sapiente repellendus. Totam?</p>
+          <p class="pp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis quam quos unde iusto nemo neque voluptatibus aliquid temporibus facere dicta!</p>
+          <button class="s4b pp">Read More</button>
+       
+        </div>
+
+        <div class="s41">
+          <div class="sss">
+            <div class="ll">
+              <h2>Categories</h2>
+              <a href="">Lorem, ipsum dolor</a><br>
+              <a href="">Maxime, accusantium</a><br>
+              <a href="">sit amet consectetur</a><br>
+              <a href=""> elit. Id, saepe</a><br>
+              <a href=""> dolor id amet</a><br>
+            </div>
+            <div class="ll">
+              <h2>Useful Links</h2>
+              <a href="">Lorem, ipsum dolor</a><br>
+              <a href="">Maxime, accusantium</a><br>
+              <a href="">sit amet consectetur</a><br>
+              <a href=""> elit. Id, saepe</a><br>
+              <a href=""> dolor id amet</a><br>
+            </div>
+          </div>
+          <div class="ip">
+            <h2 style="padding: 10px 30px;">Related Posts</h2>
+            <div class="mm">
+              <img src="./tm-img-240x120-1 (1).jpg" alt="" class="lp">
+              <p class="xx"><span> Lorem ipsum dolor</span><br>Sit amet consectetur adipisicing elit. Eos magni doloremque voluptate reprehenderit nam provident.</p>
+            </div>
+            <div class="mm">
+              <img src="./tm-img-240x120-2 (2).jpg" alt="" class="lp">
+              <p class="xx"><span> Lorem ipsum dolor</span><br>Sit amet consectetur adipisicing elit. Eos magni doloremque voluptate reprehenderit nam provident.</p>
+
+              
+            </div>
+            <div class="mm">
+              <img src="./tm-img-240x120-3 (1).jpg" alt="" class="lp">
+              <p class="xx"><span> Lorem ipsum dolor</span><br>Sit amet consectetur adipisicing elit. Eos magni doloremque voluptate reprehenderit nam provident.</p>
+
+              
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="s5">
+        <div class="s51">
+          <h3 style="color: rgb(209, 142, 17); padding-left: 10px; font-size: 1.5rem;">Lorem ipsum dolor sit</h3><br>
+          <div class="ww">
+            <p class="lm">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque, exercitationem.</p>
+          <p class="lm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, explicabo.</p>
+          <h4>Danny Egg (Executive)</h4>
+        </div>
+        </div>
+        <div class="s51">
+          <h3 style="color: rgb(209, 142, 17); padding-left: 10px; font-size: 1.5rem;">Nulla tortore dolor</h3><br>
+          <a href="">Lorem, ipsum dolor</a><br>
+          <a href="">Maxime, accusantium</a><br>
+          <a href="">sit amet consectetur</a><br>
+          <a href="">sit amet consectetur</a><br>
+          <a href=""> elit. Id, saepe</a><br>
+          <a href=""> dolor id amet</a>
+        </div>
+        <div class="s51">
+          <h3 style="color: rgb(209, 142, 17); padding-left: 10px; font-size: 1.5rem;">Etium Mollis Ernare</h3><br>
+          <p class="eme">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium quia odit iure voluptatum veniam. Sed fugit veniam quo possimus magnam.</p><hr style="color: #ffff;">
+          <p class="eme">Lorem ipsum dolor sit amet consectetur adipisicing elit. At hic velit unde dicta quia tenetur asperiores veniam nemo eligendi deleniti!</p><hr style="color: #ffff;">
+          <p class="eme">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio facere harum vero ipsa ad similique commodi odio, labore dicta provident.</p>
+          <button style="color: #ffff; background-color: darkgrey; padding: 5px 10px; border-radius: 10px;">Read More</button>
+        </div>
+        <div class="s51">
+          <div class="ph">
+            <img src="./tm-img-100x100-1 (2).jpg" alt="" class="ci">
+            <img src="./tm-img-100x100-3 (1).jpg" alt="" class="ci">
+            <img src="./tm-img-100x100-4 (1).jpg" alt="" class="ci">
+            <img src="./tm-img-100x100-5 (1).jpg" alt="" class="ci">
+            <img src="./tm-img-100x100-6 (2).jpg" alt="" class="ci">
+            <img src="./tm-img-100x100-1 (2).jpg" alt="" class="ci">
+          </div><br>
+          <p class="eme">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque repellat vel explicabo ullam, suscipit obcaecati.</p>
+          <button style="color: #ffff; background-color: darkgrey; padding: 5px 10px; border-radius: 10px;">Browse</button>
+
+        </div>
+      </div>
+    </main>
+</body>
+</html>
